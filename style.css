@@ -1,6 +1,10 @@
 * {
   /* border: 1px red solid; */
 }
+.bg_color{
+  background-color: #323232;
+
+}
 body {
   padding: 0;
   margin: 0;
@@ -18,7 +22,6 @@ body {
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-color: #323232;
   z-index: 20;
 }
 #logo {
@@ -41,7 +44,6 @@ body {
 
 #closebtn {
   display: inline-block;
-  /* display: none; */
   visibility: hidden;
   position: fixed;
   right: 5%;
@@ -73,7 +75,6 @@ body {
   align-items: center;
   justify-content: space-between;
   list-style: none;
-
   gap: 30px;
   height: 250px;
   overflow: scroll;
@@ -85,7 +86,7 @@ body {
   position: fixed;
   top: 60px;
   margin: 0;
-scrollbar-width: 10px;
+  scrollbar-width: 10px;
 }
 .itemSize {
   width: 25%;
@@ -95,15 +96,12 @@ scrollbar-width: 10px;
   color: black;
 }
 
-
 main {
   height: 2000px;
-  background-color: #323232;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  
 }
 /* Medium devices (landscape tablets, 768px and up) */
 
@@ -112,62 +110,77 @@ main {
     margin: 10px auto;
   }
 
-  .navsym {
-    display: none;
-  }
-  .closebtn {
+  #closebtn,
+  #openbtn {
     display: none;
   }
   .header_left {
-    width: 450px;
-    height: 60px;
-    background-color: white;
+    display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    color: rgb(0, 5, 5);
-    font-size: larger;
-    padding: 0;
+    width: 600px;
+    height: 60px;
+    gap: 0;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
     margin: 0;
-    z-index: 11;
-    position: relative;
   }
 
   .header_left a {
-    color: black;
+    color: white;
   }
- 
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .destopView {
-    width: 1200px;
-    margin: 10px auto;
+  body {
+    margin: 0;
+    /* overflow-x: hidden; */
+    box-sizing: border-box;
   }
-  header {
+  .head_bg {
+    position: sticky;
+    top: 0;
     width: 1000px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 20;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+    /* border: 1px red solid; */
   }
-  .navsym {
-    display: none;
+  .headrCtr {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 0;
+    margin: 0;
   }
-  .closebtn {
+  #closebtn,
+  #openbtn {
     display: none;
   }
   .header_left {
-    width: 450px;
-    height: 60px;
-    background-color: white;
+    display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    color: rgb(0, 5, 5);
-    font-size: larger;
-    padding: 0;
+    width: 600px;
+    height: 60px;
+    gap: 0;
+    padding: 0 20px;
+    position: static;
+    top: 0;
+    right: 0;
     margin: 0;
-    z-index: 11;
+    flex-wrap: wrap;
+    overflow: hidden;
   }
 
   .header_left a {
-    color: black;
+    color: white;
   }
- 
 }

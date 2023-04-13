@@ -20,9 +20,17 @@ function closeNav() {
 jQuery(window).on('scroll', function () {
     if (jQuery(window).scrollTop() > 50) {
         jQuery('#header_frame').css('background-color', 'white');
+        jQuery('.headrCtr').css('background-color', 'white');
+        
+        jQuery('.header_left').css('background-color', 'white');
+        jQuery('.header_left a').css('color', 'black');
         jQuery('#logo').css('filter', ' invert(0%)');
+
     } else {
         jQuery('#header_frame').css('background-color', '#323232');
+        jQuery('.headrCtr').css('background-color', '#323232');
+        jQuery('.header_left').css('background-color', '#323232');
+        jQuery('.header_left a').css('color', 'white');
         jQuery('#logo').css('filter', ' invert(100%)');
     }
 });
