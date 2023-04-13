@@ -17,12 +17,12 @@ function closeNav() {
 
 
 //  color = "#323232";
- color = "local";
+color = "local";
 jQuery(window).on('scroll', function () {
     if (jQuery(window).scrollTop() > 50) {
         jQuery('#header_frame').css('background-color', 'white');
         jQuery('.headrCtr').css('background-color', 'white');
-        
+
         jQuery('.header_left').css('background-color', 'white');
         jQuery('.header_left a').css('color', 'black');
         jQuery('#logo').css('filter', ' invert(0%)');
@@ -35,3 +35,22 @@ jQuery(window).on('scroll', function () {
         jQuery('#logo').css('filter', ' invert(100%)');
     }
 });
+
+
+let seconds = 0;
+let timer = setInterval(function () {
+    seconds++;
+    console.log(seconds);
+    if (seconds == 8) {
+        document.getElementById("myname").style.display = "none";
+        document.getElementById("jobtitle").style.display = "inline-block";
+
+    }
+    else if (seconds == 16) {
+        document.getElementById("jobtitle").style.display = "none";
+        document.getElementById("myname").style.display = "inline-block";
+        seconds = 0
+    }
+}, 1000); //
+
+// timer ?

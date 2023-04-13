@@ -13,7 +13,7 @@ body {
 }
 header {
   display: flex;
-  /* align-items: center; */
+  flex-direction: column;
   justify-content: center;
   /* height: 600px; */
   background-image: url("/assets/Dev_Header_Image-1280x645.webp");
@@ -111,6 +111,81 @@ header {
 
 main {
   height: 2000px;
+}
+#jobtitle {
+  display: none;
+}
+.name-animation {
+  display: inline-block;
+  width: fit-content;
+  font-size: 3rem;
+  animation-iteration-count: infinite;
+  animation: write-delete 8s steps(10, start) infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.1em solid #000000;
+  color: white;
+}
+.data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 80px;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+@keyframes write-delete {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  33.33% {
+    width: 380px;
+    opacity: 1;
+  }
+  46.67% {
+    width: 380px;
+    opacity: 1;
+  }
+  60% {
+    width: 0;
+    opacity: 0;
+  }
+  80% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 0;
+    opacity: 0;
+  }
+}
+
+.name-animation::after {
+  content: "";
+  display: inline-block;
+  vertical-align: bottom;
+  margin-left: 5px;
+  /* height: 2rem; */
+  animation: blink 4s step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: #ffffff;
+  }
+  100% {
+    border-color: #ffffff;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
