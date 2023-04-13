@@ -15,6 +15,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   /* height: 600px; */
   background-image: url("/assets/Dev_Header_Image-1280x645.webp");
   background-position: center;
@@ -195,7 +196,7 @@ main {
 
 @media only screen and (min-width: 768px) {
   body {
-    margin: 10px auto;
+    margin: 0 auto;
   }
 
   #closebtn,
@@ -213,6 +214,7 @@ main {
     top: 0;
     right: 0;
     margin: 0;
+    overflow-x: hidden;
   }
 
   .header_left a {
@@ -224,8 +226,10 @@ main {
 @media only screen and (min-width: 992px) {
   body {
     margin: 0;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     box-sizing: border-box;
+  }
+  header {
   }
   .head_bg {
     position: fixed;
