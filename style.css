@@ -119,7 +119,7 @@ main {
 .name-animation {
   display: inline-block;
   width: fit-content;
-  font-size: 3rem;
+  font-size: 2rem;
   animation-iteration-count: infinite;
   animation: write-delete 8s steps(10, start) infinite;
   white-space: nowrap;
@@ -133,7 +133,7 @@ main {
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 80px;
+  top: 60px;
   margin: 0 auto;
   color: white;
   text-align: center;
@@ -220,6 +220,17 @@ main {
   .header_left a {
     color: white;
   }
+  
+.name-animation {
+
+  font-size: 3rem;
+;
+}
+  .data {
+
+  top: 80px;
+
+}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
