@@ -6,236 +6,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="/app.js"></script>
-    <link rel="icon" href="/assets/icon.jfif">
+    <!-- <link rel="icon" href="/assets/icon.jfif"> -->
     <title>Ahmed Abdalla</title>
 </head>
 
 <body>
 
+    <header class="head_bg" id="header_frame">
 
-    <header class="head_bg_color">
         <section class="logoCon">
-
-        </div>
+            <img src="/assets/LOGO.png" alt="" id="logo">
+            </div>
 
 
         </section>
 
-        <div class="navsym" onclick="openNav()">
+        <div class="navsym" id="openbtn" onclick="openNav()">
             <hr>
             <hr>
             <hr>
         </div>
 
+        <div id="closebtn" onclick="closeNav()">
+            <hr class="up">
+            <hr class="down">
+        </div>
+
         <ul class="header_left" id="snav">
-            <li id="closeSide"> <a id="closeSideA" href="javascript:void(0)" class="closebtn"
-                    onclick="closeNav()">&times;</a></li>
+            <!-- <li id="closeSide"> <a id="closeSideA" href="javascript:void(0)" class="closebtn"
+                    onclick="closeNav()">&times;</a></li>-->
             <li>
-                <a class="itemSize" href="">Products <i class="arrow down"></i></a>
+                <a class="itemSize" href="">Home </a>
             </li>
             <li>
 
-                <a class="itemSize" href="">Overview <i class="arrow down"></i></a>
-            </li>
-            <li>
-                <a class="itemSize" href="">
-                    <button type="button" class="login_btn bg_color">Login</button>
-                </a>
-
+                <a class="itemSize" href="">About </a>
             </li>
 
             <li>
-                <div class="languages_flags itemSize">
-                    <img class="lang_img" src="/assets/eng.png"></img>
-                    <div>
-                        <i class="arrow down"></i>
-                    </div>
-                </div>
 
+                <a class="itemSize" href="">About </a>
             </li>
 
+            <li>
+
+                <a class="itemSize" href="">Service </a>
+            </li>
+
+
+            <li>
+
+                <a class="itemSize" href="">Resume </a>
+            </li>
+
+
+            <li>
+
+                <a class="itemSize" href="">Portfolio </a>
+            </li>
+
+            <li>
+
+                <a class="itemSize" href="">Contact </a>
+            </li>
         </ul>
 
     </header>
 
     <main>
-        <article class="section_1">
-
-            <div>
-                <p class=""> A-BIM BIM VIEWER</p>
-                <h1 class="mrg_bt"> FREE <span class="title _color mrg_bt ">BIM viewer</span> TOOL</h1>
-                <p>A-BIM BIM Viewer is our free tool for viewing your federated BIM models both on web and mobile
-                </p>
-                <p class="mrg_bt">View your .pdf and .dwg files together with .IFC, Revit and .nwd models all
-                    together, also on
-                    mobile.
-                </p>
-                <div class="info">
-                    <img src="/assets/flash.png" alt="" class="info_img">
-                    <h3>World's fastest BIM viewer </h3>
-                </div>
-                <div class="info">
-                    <img src="/assets/mobile.png" alt="" class="info_img">
-                    <h3> Available on mobile </h3>
-                </div>
-                <div class="info mrg_bt">
-                    <img src="/assets/upload.png" alt="" class="info_img">
-                    <h3>Easy upload </h3>
-                </div>
-                <div class="getStart  ">
-                    <input type="email" name="" id="" class="email" placeholder="Enter your Email">
-                    <button type="button" class="getstartBtm bg_color"> Get started now</button>
-                </div>
-
-            </div>
-            <div class="pcImg">
-                <img src="/assets/pc.png" alt="" class="pcImg">
-            </div>
-
-        </article>
-        <hr class="seb _color">
-
-
-        <article class="section_2">
-
-            <div>
-                <h2 class="mrg_bt"><span class="_color">A-BIM</span> Open Standards</h2>
-
-                <p>
-                    Gather all comments, requests and questions in one place without having them lost into external
-                    email communication.
-                </p>
-                <p>
-                    Explore the benefit of having a real-time flow of comments between authoring tools like Revit
-                    and elc... and the A-BIM web-application.
-                </p>
-            </div>
-            <div class="BIMST_Img">
-                <h2 class="mrg_bt">BIM STANDARDS</h2>
-                <img src="/assets/bimStandars.jfif" alt="" class="BIMST_Img ">
-            </div>
-
-        </article>
-
-        <hr class="seb _color">
-
-
-        <article class="section_2">
-
-            <div>
-                <h2 class="mrg_bt"> Integerations</h2>
-
-                <p>
-                    Native integrations with Revit, Solibri, Tekla, ArchiCAD and Navisworks software to easily
-                    upload your models and comments into your BIM Viewer project.
-                </p>
-                <p>
-                    View your .pdf and .dwg files together with .IFC, Revit and .nwd models all together, also on
-                    mobile.
-                </p>
-            </div>
-            <div class="BIMST_Img">
-                <h2 class="mrg_bt">BIM Integeration</h2>
-                <img src="https://www.cima.ca/wp-content/uploads/2021/08/Visuel_roue_BIM_EN_animation_1200x1200.gif"
-                    alt="" class="BIMST_Img ">
-            </div>
-
-        </article>
-
-        <hr class="seb _color">
-
-        <article class="mobileApp">
-            <h2>Mobile APP Overview</h2>
-
-            <div class="images5">
-                <div class="img1 img">
-                    <p>Enter the building code</p>
-                    <img src="/assets/1.jpg" alt="" class="img">
-
-                </div>
-                <div class="img2 img">
-                    <p>You can view the building in 3D view</p>
-                    <img src="/assets/2.jpg" alt="" class="img">
-                </div>
-                <div class="img3 img">
-                    <p>Zoom inside the building to see a specific details</p>
-                    <img src="/assets/3.jpg" alt="" class="img">
-                </div>
-                <div class="img4 img">
-                    <p>Viewing also in AR</p>
-                    <img src="/assets/4.jpg" alt="" class="img">
-                </div>
-                <div class="img5 img">
-                    <p>Moving closely to check a specific details</p>
-                    <img src="/assets/5.jpg" alt="" class="img">
-                </div>
-
-
-
-
-
-            </div>
-
-        </article>
 
     </main>
 
-    <footer>
-        <div class="div1">
-
-            <div class="fotText">
-                <h2>Get started now for free!</h2>
-                <p>A-BIM is available in your browser,
-                    or you can download our app for Windows or mobile (iOS & Android).
-                </p>
-            </div>
-            <div class="getStart">
-                <input type="email" name="" id="" class="email" placeholder="Enter your Email">
-                <button type="button" class="getstartBtm bg_color"> Get started now</button>
-            </div>
-        </div>
-        <div class="div2">
-            <div>
-                <h3>Products</h3>
-                <ul>
-
-                    <li class="li_mrg">A-BIM Web</li>
-                    <li class="li_mrg">A-BIM Android</li>
-                    <li class="li_mrg">A-BIM IOS</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Events</h3>
-                <ul>
-                    <li class="li_mrg">User day</li>
-
-                </ul>
-            </div>
-            <div>
-                <h3>Contacts</h3>
-                <ul>
-                    <li class="li_mrg">
-                        <a href="">HQ : +4900000000</a>
-                    </li>
-                    <li class="li_mrg">
-                        <a href="">FAX : +4900000000</a>
-                    </li>
-                    <li class="li_mrg">
-                        <a href="">Email : A-BIM@gmail.com</a>
-                    </li>
-                </ul>
-
-            </div>
-
-            <div>
-                <h3 class="dow_img">Dowenload</h3>
-                <img src="/assets/applestore.png" alt="" class="dow_img">
-                <img src="/assets/googlestore.png" alt="" class="dow_img">
-            </div>
-
-        </div>
-    </footer>
 
 </body>
 
