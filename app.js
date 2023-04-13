@@ -16,7 +16,8 @@ function closeNav() {
 
 
 
-
+//  color = "#323232";
+ color = "local";
 jQuery(window).on('scroll', function () {
     if (jQuery(window).scrollTop() > 50) {
         jQuery('#header_frame').css('background-color', 'white');
@@ -27,9 +28,9 @@ jQuery(window).on('scroll', function () {
         jQuery('#logo').css('filter', ' invert(0%)');
 
     } else {
-        jQuery('#header_frame').css('background-color', '#323232');
-        jQuery('.headrCtr').css('background-color', '#323232');
-        jQuery('.header_left').css('background-color', '#323232');
+        jQuery('#header_frame').css('background', color);
+        jQuery('.headrCtr').css('background', color);
+        jQuery('.header_left').css('background', color);
         jQuery('.header_left a').css('color', 'white');
         jQuery('#logo').css('filter', ' invert(100%)');
     }

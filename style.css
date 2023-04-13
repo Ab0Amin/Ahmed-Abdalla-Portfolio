@@ -1,15 +1,29 @@
 * {
   /* border: 1px red solid; */
 }
-.bg_color{
-  background-color: #323232;
-
+.bg_color {
+  /* background-color: #323232; */
+  background: local;
 }
 body {
   padding: 0;
   margin: 0;
   width: 100vw;
   height: 100vh;
+}
+header {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  /* height: 600px; */
+  background-image: url("/assets/Dev_Header_Image-1280x645.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.bgImg {
+  width: 100%;
+  visibility: hidden;
 }
 
 .head_bg {
@@ -79,7 +93,6 @@ body {
   height: 250px;
   overflow: scroll;
   width: 0;
-  background-color: white;
   font-size: larger;
   padding: 30px 0;
   z-index: 11;
@@ -140,7 +153,7 @@ main {
     box-sizing: border-box;
   }
   .head_bg {
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 1000px;
     height: 60px;
