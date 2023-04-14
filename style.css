@@ -194,6 +194,31 @@ main {
   }
 }
 
+.mylinks {
+  position: absolute;
+  top: 160px;
+
+}
+.mylinks a {
+  color: white;
+  margin: 10px;
+  font-size: x-small;
+}
+.headerbtn{
+  position: absolute;
+  top: 200px
+}
+.headerbtn button{
+background-color: #f55422;
+border-radius: 30px;
+padding: 8px 30px;
+margin-top: 25px;
+margin-left: 20px;
+font-size: 14px;
+color: white;
+border: 2px solid #f55422;
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .name-animation {
@@ -207,7 +232,7 @@ main {
     top: 80px;
     width: 100%;
   }
-  
+
   @keyframes write-delete {
     0% {
       width: 0;
@@ -267,7 +292,6 @@ main {
     color: white;
   }
 
- 
   .name-animation {
     font-size: 2.5rem;
     margin: 8px;
@@ -279,7 +303,7 @@ main {
     top: 80px;
     width: 100%;
   }
-  
+
   @keyframes write-delete {
     0% {
       width: 0;
@@ -376,7 +400,7 @@ main {
     top: 100px;
     width: 100%;
   }
-  
+
   @keyframes write-delete {
     0% {
       width: 0;
