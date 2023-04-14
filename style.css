@@ -140,6 +140,7 @@ main {
   width: 100%;
 }
 
+
 @keyframes write-delete {
   0% {
     width: 0;
