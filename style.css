@@ -20,7 +20,8 @@ header {
   background-image: url("/assets/Dev_Header_Image-1280x645.webp");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  height: 80%;
 }
 .bgImg {
   width: 100%;
