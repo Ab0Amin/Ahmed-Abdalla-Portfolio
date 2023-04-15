@@ -102,6 +102,8 @@ header {
   top: 60px;
   margin: 0;
   scrollbar-width: 10px;
+  background-color: white;
+  
 }
 .itemSize {
   width: 25%;
@@ -111,9 +113,6 @@ header {
   color: black;
 }
 
-main {
-  height: 2000px;
-}
 #jobtitle {
   display: none;
 }
@@ -132,6 +131,9 @@ main {
 .welc {
   font-size: 0.7rem;
 }
+
+/* animation name and title */
+
 .data {
   display: flex;
   flex-direction: column;
@@ -219,6 +221,9 @@ color: white;
 border: 2px solid #f55422;
 }
 
+/*  about me  */
+
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .name-animation {
@@ -286,6 +291,8 @@ border: 2px solid #f55422;
     right: 0;
     margin: 0;
     overflow-x: hidden;
+  background :local;
+
   }
 
   .header_left a {

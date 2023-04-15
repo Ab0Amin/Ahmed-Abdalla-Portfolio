@@ -3,6 +3,7 @@ function openNav() {
     document.getElementById("snav").style.width = "100%";
     document.getElementById("openbtn").style.visibility = "hidden";
     document.getElementById("closebtn").style.visibility = "visible";
+    jQuery('.header_left').css('background-color', 'white');
 
 }
 
