@@ -5,6 +5,9 @@
   /* background-color: #323232; */
   background: local;
 }
+.cl {
+  color: #f55422;
+}
 body {
   padding: 0;
   margin: 0;
@@ -103,7 +106,6 @@ header {
   margin: 0;
   scrollbar-width: 10px;
   background-color: white;
-  
 }
 .itemSize {
   width: 25%;
@@ -199,30 +201,76 @@ header {
 .mylinks {
   position: absolute;
   top: 160px;
-
 }
 .mylinks a {
   color: white;
   margin: 10px;
   font-size: x-small;
 }
-.headerbtn{
+.headerbtn {
   position: absolute;
-  top: 200px
+  top: 200px;
 }
-.headerbtn button{
-background-color: #f55422;
-border-radius: 30px;
-padding: 8px 30px;
-margin-top: 25px;
-margin-left: 20px;
-font-size: 14px;
-color: white;
-border: 2px solid #f55422;
+.headerbtn button {
+  background-color: #f55422;
+  border-radius: 30px;
+  padding: 8px 30px;
+  margin-top: 25px;
+  margin-left: 20px;
+  font-size: 14px;
+  color: white;
+  border: 2px solid #f55422;
 }
 
 /*  about me  */
+main {
+  background-color: rgb(42, 42, 42);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 20px;
+  margin-right: 80px;
+}
+.profileImg {
+  width: 85%;
+  border: rgb(98, 83, 44) 5px solid;
+}
+.aboutName {
+  width: 100%;
+  margin-bottom: 0;
+}
+.abouttitle {
+  margin-top: 5px;
+  width: 100%;
+}
+.abouttxt {
+  margin: 0;
+  color: white;
+  padding-top: 20px;
+  margin-bottom: 15px;
+  border-bottom: #f55422 solid 2px;
+}
 
+.CVbtn {
+  width: fit-content;
+  padding: 10px 5px;
+  background-image: linear-gradient(
+    to right,
+    rgb(63, 63, 63) 50%,
+    rgb(42, 42, 42) 50%
+  );
+}
+.CVbtn:hover {
+  background-image: linear-gradient(to right, gray 100%, rgb(42, 42, 42) 50%);
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -291,8 +339,7 @@ border: 2px solid #f55422;
     right: 0;
     margin: 0;
     overflow-x: hidden;
-  background :local;
-
+    background: local;
   }
 
   .header_left a {
@@ -436,5 +483,58 @@ border: 2px solid #f55422;
       width: 0;
       opacity: 0;
     }
+  }
+
+  /*  about me  */
+  .about {
+    flex-direction: row;
+  }
+  .abouttxt {
+    display: inline-block;
+    margin-bottom: 50px;
+  }
+  .profileImg {
+    margin-top: 80px;
+    width: 600px;
+    float: left;
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+
+  .aboutName {
+    width: 100%;
+    margin-bottom: 0;
+    /* margin-left: 100px; */
+    /* float: right; */
+  }
+  .about p {
+    /* width: 50%; */
+    /* position: relative;
+    right: -50%; */
+  }
+  .abouttitle {
+    margin-top: 5px;
+    width: 100%;
+  }
+  .aboutbtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+  .CVbtn {
+    width: fit-content;
+    display: inline-block;
+    /* margin:0; */
+    padding: 10px 5px;
+    background-image: linear-gradient(
+      to right,
+      rgb(63, 63, 63) 50%,
+      rgb(42, 42, 42) 50%
+    );
+  }
+  .CVbtn:hover {
+    background-image: linear-gradient(to right, gray 100%, rgb(42, 42, 42) 50%);
   }
 }
