@@ -428,7 +428,19 @@ main {
   margin-right: 10px;
   margin-left: 5px;
 }
-
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.contact a ,.contact h3 {
+  color: #ffffff;
+  font-size: 2rem;
+  text-decoration: none;
+}
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .name-animation {
@@ -639,9 +651,9 @@ main {
   }
 
   .skillcon {
-   gap: 80px;
-  } 
-  .skl1 h3{
+    gap: 80px;
+  }
+  .skl1 h3 {
     font-size: 1.5rem;
   }
   .skl1 li {
@@ -800,9 +812,7 @@ main {
     width: 1100px;
   }
 
-  
   .skillcon {
-    
     width: 1100px;
-   } 
+  }
 }
