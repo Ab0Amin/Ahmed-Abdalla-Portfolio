@@ -8,6 +8,16 @@
 .cl {
   color: #f55422;
 }
+.cl1 {
+  background-color: rgb(42, 42, 42);
+  width: 100%;
+  padding-top: 70px;
+}
+.cl2 {
+  background-color: rgb(25, 25, 25);
+  width: 100%;
+  padding-top: 70px;
+}
 body {
   padding: 0;
   margin: 0;
@@ -256,6 +266,8 @@ main {
   color: white;
   padding-top: 20px;
   margin-bottom: 15px;
+  font-size: 2rem;
+
   border-bottom: #f55422 solid 2px;
 }
 
@@ -270,6 +282,79 @@ main {
 }
 .CVbtn:hover {
   background-image: linear-gradient(to right, gray 100%, rgb(42, 42, 42) 50%);
+}
+
+/* service */
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.servicetxt {
+  color: white;
+  font-size: 2rem;
+  border-bottom: #f55422 solid 2px;
+  width: fit-content;
+}
+.serviceBoxs {
+  display: flex;
+  gap: 25px;
+  overflow-x: scroll;
+  margin: 20px;
+  width: 80%;
+  padding: 10px;
+}
+
+
+.serviceBoxs::-webkit-scrollbar {
+  width: 1px;
+}
+
+.serviceBoxs::-webkit-scrollbar-thumb {
+  background-color: rgb(249, 243, 243);
+  border-radius: 10px;
+}
+
+
+
+.serviceItem {
+  width: 250px;
+  background-color: #414040;
+  padding: 10px;
+  text-align: center;
+  border-radius: 30px;
+
+}
+.itemImg {
+  width: 200px;
+ filter: invert(30%);
+
+}
+.itemName {
+  color: white;
+}
+.itemDis {
+  color: rgb(154, 154, 154);
+}
+.bim{
+  height: 150px;
+}
+.datasc{
+  border-radius: 50%;
+}
+.android{
+  width: auto;
+  height: 150px;
+}
+.serviceItem:hover{
+  border-bottom: #f55422 solid 3px;
+
+}
+.serviceItem:hover .itemImg {
+ filter: invert(0%);
+
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
