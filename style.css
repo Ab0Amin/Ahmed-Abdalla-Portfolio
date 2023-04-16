@@ -399,8 +399,9 @@ main {
 font-size: .9rem;
 font-style: italic;
 font-weight: 100;
-
 }
+
+
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -599,6 +600,11 @@ font-weight: 100;
   .serviceItem:hover .itemImg {
     filter: invert(0%);
   }
+
+
+.myExperice{
+  display: flex;
+}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -744,4 +750,10 @@ font-weight: 100;
   /* service */
 .serviceBoxs{width: 1100px;}
   
+
+/* experince */
+
+.myExperice{
+width: 1100px;  
+}
 }
