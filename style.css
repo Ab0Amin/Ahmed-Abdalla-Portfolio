@@ -410,7 +410,24 @@ main {
   align-items: center;
   color: white;
 }
-
+.skills h3 {
+  border-bottom: 1px solid #f55422;
+  width: fit-content;
+}
+.skills li {
+  list-style: none;
+  color: rgb(173, 170, 170);
+}
+.skills li::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: #f55422;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-left: 5px;
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -455,26 +472,33 @@ main {
       opacity: 0;
     }
   }
-}
 
-.mylinks {
-  top: 245px;
-}
-.mylinks a {
-  font-size: x-large;
-}
-.headerbtn {
-  top: 300px;
-}
+  .mylinks {
+    top: 245px;
+  }
+  .mylinks a {
+    font-size: x-large;
+  }
+  .headerbtn {
+    top: 300px;
+  }
 
-/*  about me  */
+  /*  about me  */
 
-.aboutName {
-  font-size: 2.6rem;
-}
+  .aboutName {
+    font-size: 2.6rem;
+  }
 
-.abouttitle {
-  font-size: 1rem;
+  .abouttitle {
+    font-size: 1rem;
+  }
+
+  .skillcon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -612,6 +636,17 @@ main {
 
   .myExperice {
     display: flex;
+  }
+
+  .skillcon {
+   gap: 80px;
+  } 
+  .skl1 h3{
+    font-size: 1.5rem;
+  }
+  .skl1 li {
+    width: 150px;
+    font-size: 1.3rem;
   }
 }
 
@@ -764,4 +799,10 @@ main {
   .myExperice {
     width: 1100px;
   }
+
+  
+  .skillcon {
+    
+    width: 1100px;
+   } 
 }
