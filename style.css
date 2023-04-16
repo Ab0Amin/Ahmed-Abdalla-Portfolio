@@ -34,7 +34,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80%;
+  height: 70%;
 }
 .bgImg {
   width: 100%;
@@ -140,9 +140,6 @@ header {
   color: white;
   margin: 8px;
 }
-.welc {
-  font-size: 0.7rem;
-}
 
 /* animation name and title */
 
@@ -152,13 +149,16 @@ header {
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 60px;
+  top: 70px;
   margin: 0 auto;
   color: white;
   text-align: center;
   width: 100%;
 }
 
+.welc {
+  font-size: 0.8rem;
+}
 @keyframes write-delete {
   0% {
     width: 0;
@@ -210,16 +210,16 @@ header {
 
 .mylinks {
   position: absolute;
-  top: 160px;
+  top: 175px;
 }
 .mylinks a {
   color: white;
-  margin: 10px;
-  font-size: x-small;
+  margin: 15px;
+  font-size: large;
 }
 .headerbtn {
   position: absolute;
-  top: 200px;
+  top: 210px;
 }
 .headerbtn button {
   background-color: #f55422;
@@ -247,7 +247,7 @@ main {
   align-items: center;
   color: white;
   padding: 20px;
-  margin-right: 80px;
+  /* margin-right: 20px; */
 }
 .profileImg {
   width: 85%;
@@ -256,6 +256,7 @@ main {
 .aboutName {
   width: 100%;
   margin-bottom: 0;
+  font-size: 2.2rem;
 }
 .abouttitle {
   margin-top: 5px;
@@ -306,7 +307,6 @@ main {
   padding: 10px;
 }
 
-
 .serviceBoxs::-webkit-scrollbar {
   width: 1px;
 }
@@ -316,20 +316,18 @@ main {
   border-radius: 10px;
 }
 
-
-
 .serviceItem {
   width: 250px;
   background-color: #414040;
   padding: 10px;
   text-align: center;
   border-radius: 30px;
-
 }
 .itemImg {
+  height: 200px;
   width: 200px;
- filter: invert(30%);
-
+  filter: invert(30%);
+  object-fit: contain;
 }
 .itemName {
   color: white;
@@ -337,24 +335,21 @@ main {
 .itemDis {
   color: rgb(154, 154, 154);
 }
-.bim{
-  height: 150px;
-}
-.datasc{
+
+.datasc {
   border-radius: 50%;
 }
-.android{
-  width: auto;
+.android {
   height: 150px;
+  width: 150px;
+  object-fit: contain;
+  padding: 25px;
 }
-.serviceItem:hover{
+.serviceItem:hover {
   border-bottom: #f55422 solid 3px;
-
 }
 .serviceItem:hover .itemImg {
- filter: invert(0%);
-
-
+  filter: invert(0%);
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -364,10 +359,10 @@ main {
     margin: 8px;
   }
   .welc {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .data {
-    top: 80px;
+    top: 100px;
     width: 100%;
   }
 
@@ -401,6 +396,27 @@ main {
     }
   }
 }
+
+.mylinks {
+  top: 245px;
+}
+.mylinks a {
+  font-size: x-large;
+}
+.headerbtn {
+  top: 300px;
+}
+
+/*  about me  */
+
+.aboutName {
+  font-size: 2.6rem;
+}
+
+.abouttitle {
+  font-size: 1rem;
+}
+
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (min-width: 768px) {
@@ -432,14 +448,14 @@ main {
   }
 
   .name-animation {
-    font-size: 2.5rem;
+    font-size: 2.9rem;
     margin: 8px;
   }
   .welc {
-    font-size: 1rem;
+    font-size: 1.8rem;
   }
   .data {
-    top: 80px;
+    top: 120px;
     width: 100%;
   }
 
@@ -452,11 +468,11 @@ main {
       opacity: 1;
     }
     33.33% {
-      width: 360px;
+      width: 380px;
       opacity: 1;
     }
     46.67% {
-      width: 360px;
+      width: 380px;
       opacity: 1;
     }
     60% {
@@ -471,6 +487,67 @@ main {
       width: 0;
       opacity: 0;
     }
+  }
+
+  .mylinks {
+    top: 330px;
+  }
+  .mylinks a {
+    font-size: x-large;
+  }
+  .headerbtn {
+    top: 400px;
+  }
+  .headerbtn button {
+    font-size: 25px;
+  }
+
+  /*  about me  */
+
+  .aboutName {
+    font-size: 2.6rem;
+  }
+
+  .abouttitle {
+    font-size: 1rem;
+  }
+
+  /* service */
+
+  .serviceItem {
+    width: 300px;
+    background-color: #414040;
+    padding: 10px;
+    text-align: center;
+    border-radius: 30px;
+  }
+  .itemImg {
+    height: 280px;
+    width: 280px;
+    filter: invert(30%);
+    object-fit: contain;
+  }
+  .itemName {
+    color: white;
+  }
+  .itemDis {
+    color: rgb(154, 154, 154);
+  }
+
+  .datasc {
+    border-radius: 50%;
+  }
+  .android {
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+    padding: 40px;
+  }
+  .serviceItem:hover {
+    border-bottom: #f55422 solid 3px;
+  }
+  .serviceItem:hover .itemImg {
+    filter: invert(0%);
   }
 }
 
@@ -573,30 +650,20 @@ main {
   /*  about me  */
   .about {
     flex-direction: row;
+    width: 1200px;
+    gap: 50px;
+    padding-top: 10px;
   }
   .abouttxt {
     display: inline-block;
-    margin-bottom: 50px;
+    margin-top: 25px;
+    margin-bottom: 0;
+    /* padding-bottom: 10px; */
   }
   .profileImg {
-    margin-top: 80px;
     width: 600px;
-    float: left;
-    margin-right: 50px;
-    margin-left: 50px;
   }
 
-  .aboutName {
-    width: 100%;
-    margin-bottom: 0;
-    /* margin-left: 100px; */
-    /* float: right; */
-  }
-  .about p {
-    /* width: 50%; */
-    /* position: relative;
-    right: -50%; */
-  }
   .abouttitle {
     margin-top: 5px;
     width: 100%;
@@ -622,4 +689,9 @@ main {
   .CVbtn:hover {
     background-image: linear-gradient(to right, gray 100%, rgb(42, 42, 42) 50%);
   }
+
+  
+  /* service */
+.serviceBoxs{width: 1100px;}
+  
 }
