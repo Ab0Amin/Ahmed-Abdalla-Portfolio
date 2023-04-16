@@ -1,3 +1,4 @@
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&family=Open+Sans:wght@500;600&display=swap');
 * {
   /* border: 1px red solid; */
 }
@@ -7,6 +8,10 @@
 }
 .cl {
   color: #f55422;
+}
+.bg_cl{
+  background-color: #f55422;
+
 }
 .cl1 {
   background-color: rgb(42, 42, 42);
@@ -354,6 +359,47 @@ main {
 }
 .serviceItem:hover .itemImg {
   filter: invert(0%);
+}
+
+/* my experince */
+.Ed ,.wrk{
+  padding: 20px;
+  color: white;
+}
+.Ed li ,.wrk li{
+  font-size: 1.3rem;
+  list-style: none;
+  padding: 0;
+}
+.Ed li::before , .wrk li::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #f55422;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+.vl{
+  border-left: 2px solid #f55422;
+ padding-left: 10px;
+ margin-left: 10px;
+}
+
+.edDate{
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 15px;
+}
+.edLoc{
+  font-family: "Dancing Script";
+}
+.company{
+font-size: .9rem;
+font-style: italic;
+font-weight: 100;
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
