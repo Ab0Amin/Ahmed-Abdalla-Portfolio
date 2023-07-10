@@ -20,12 +20,14 @@ function closeNav() {
     document.getElementById("closebtn").style.visibility = "hidden";
     opended=false
 
+    if (jQuery(window).scrollTop() < 50){
 
-    jQuery('#header_frame').css('background', color);
-    jQuery('.headrCtr').css('background', color);
-    jQuery('.header_left').css('background', color);
-    jQuery('.header_left a').css('color', 'white');
-    jQuery('#logo').css('filter', ' invert(100%)');
+        jQuery('#header_frame').css('background', color);
+        jQuery('.headrCtr').css('background', color);
+        jQuery('.header_left').css('background', color);
+        jQuery('.header_left a').css('color', 'white');
+        jQuery('#logo').css('filter', ' invert(100%)');
+    }
 
 }
 
